@@ -1,0 +1,27 @@
+# Compile of cuasiTB.v was successful.
+# Load canceled
+# Compile of cuasiALU.v was successful.
+# Compile of cuasiALU.v was successful.
+# Compile of cuasiTB.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+# Load canceled
+vsim work.Cuasi_TB
+# vsim work.Cuasi_TB 
+# Start time: 21:30:41 on Aug 27,2025
+# Loading work.Cuasi_TB
+# Loading work.Cuasi
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'sel'. The port definition is at: C:/ArquitecturaDeCompuD03/cuasiALU.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /Cuasi_TB/DUV File: C:/ArquitecturaDeCompuD03/cuasiTB.v Line: 10
+add wave -position insertpoint  \
+sim:/Cuasi_TB/a_tb \
+sim:/Cuasi_TB/b_tb \
+sim:/Cuasi_TB/sel_tb \
+sim:/Cuasi_TB/c_tb
+run -all
+# ** Note: $stop    : C:/ArquitecturaDeCompuD03/cuasiTB.v(70)
+#    Time: 1 us  Iteration: 0  Instance: /Cuasi_TB
+# Break in Module Cuasi_TB at C:/ArquitecturaDeCompuD03/cuasiTB.v line 70
+quit -sim
+# End time: 21:33:04 on Aug 27,2025, Elapsed time: 0:02:23
+# Errors: 0, Warnings: 7
