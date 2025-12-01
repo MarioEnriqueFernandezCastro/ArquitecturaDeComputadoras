@@ -1,0 +1,11 @@
+`timescale 1ns/1ns
+
+module AND(
+	input A,
+	input B,
+	output S
+	);
+	
+	assign S= A & B;
+
+endmodule
